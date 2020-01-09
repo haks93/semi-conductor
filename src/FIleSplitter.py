@@ -9,7 +9,7 @@ def get_file_relative_path(directory_path, file_name, file_suffix, file_extensio
 
 
 originData = open("../data/train.csv", "r")
-
+originData.readline()
 
 dataDirectory = "../data/"
 trainSetFileName = "train_"
