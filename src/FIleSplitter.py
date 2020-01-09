@@ -10,6 +10,7 @@ def get_file_relative_path(directory_path, file_name, file_suffix, file_extensio
 
 originData = open("../data/train.csv", "r")
 
+
 dataDirectory = "../data/"
 trainSetFileName = "train_"
 trainSetExtension = ".csv"
@@ -30,3 +31,5 @@ for trainSetSuffix in range(1, TOTAL_FILE_LENGTH // SINGLE_FILE_LENGTH + 1):
         if lineCount % SINGLE_FILE_LENGTH == 0:
             f.close()
             break
+
+originData.close()
